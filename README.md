@@ -43,3 +43,30 @@ Author
 Kumaran
 Electronics and Communication Engineering Student
 </CodeBlock>
+
+<box gap={2}>
+  <row align="center" gap={2}>
+    <icon name="file-code" size="lg" color="secondary"/>
+    <box flex="1" gap={1}>
+      **`traffic_light.v`**
+      <text color="secondary" size="sm">Design source</text>
+    </box>
+    <button variant="outline" size="sm" onClick={() => GenUI.copy("traffic_light.v")}>Copy name</button>
+  </row>
+  <row align="center" gap={2}>
+    <icon name="file-code" size="lg" color="secondary"/>
+    <box flex="1" gap={1}>
+      **`tb_traffic_light.v`**
+      <text color="secondary" size="sm">Testbench</text>
+    </box>
+    <button variant="outline" size="sm" onClick={() => GenUI.copy("tb_traffic_light.v")}>Copy name</button>
+  </row>
+  <row align="center" gap={2}>
+    <icon name="file-text" size="lg" color="secondary"/>
+    <box flex="1" gap={1}>
+      **`README.md`**
+      <text color="secondary" size="sm">Project documentation</text>
+    </box>
+    <button variant="outline" size="sm" onClick={() => GenUI.copy("README.md")}>Copy name</button>
+  </row>
+</box>
